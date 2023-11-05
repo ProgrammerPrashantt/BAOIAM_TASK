@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div style="text-align: center; margin: 150px 0;">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png"
+            style="color: #4285f4;" alt="Google Logo" width="272" height="92">
+        <br>
+
+        <form action="https://www.google.com/search" method="GET">
+
+            <input class="search-box" placeholder="Search Google or type a URL" type="text" name="q" autofocus>
+
+            <br><br>
+            <input type="submit" value="Google Search"
+                style="padding: 10px 20px; background-color: #4285f4; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+        </form>
+
+
+        <div class="social-icons">
+            <a class="icone" href="https://www.facebook.com"><img src="vecteezy_facebook-png-icon_16716481_104.png" alt="Facebook"></a>
+            <a class="icone" href="https://www.twitter.com"><img src="1690643591twitter-x-logo-png.png" alt="Twitter"></a>
+            <a class="icone" href="https://www.instagram.com"><img src="vecteezy_instagram-logo-png-instagram-icon-transparent_18930415_795.png" alt="Instagram"></a>
+            <a class="icone" href="https://www.linkedin.com"><img src="vecteezy_linkedin-logo-png-linkedin-icon-transparent-png_18930587_72.png" alt="LinkedIn"></a>
+            <a class="icone" href="https://www.youtube.com"><img src="1656501255youtube-logo-png.png" alt="YouTube"></a>
+
+            
+        </div>
+        <div class="social-icons">
+            <a class="icone" href="https://www.tiktok.com"><img src="1655889920tiktok-logo-png.png" alt="TikTok"></a>
+            <a class="icone" href="https://www.whatsapp.com"><img src="1661938251whatsapp-logo-png.png" alt="WhatsApp"></a>
+            <a class="icone" href="https://www.discord.com"><img src="1691730767discord-logo-transparent.png" alt="Discord"></a>
+            <a class="icone" href="https://www.pinterest.com"><img src="1686205272pinterest-logo-png.png" alt="Pinterest"></a>
+            <a class="icone" href="https://www.netflix.com"><img src="vecteezy_netflix-logo-transparent-png_22101069_28 (1).png" alt="Netflix"></a>
+
+            
+        </div>
+
+
+
+
+
+
+
+        <div id="notes-box">
+            <input type="text" id="note-input" placeholder="Add a note">
+            <button id="add-button">Add</button>
+        </div>
+        <div id="notes-list">
+            <!-- Notes will be displayed here -->
+        </div>
+        <script src="script.js"></script>
+        
+    </div>
+
+    <div class="time-box">
+        <h1 style="color: #fff;">Current Time</h1>
+        <p style="color: #fff;" id="current-time"></p>
+    </div>
+
+
+
+    <div class="counter">
+        <label for="target-date"><b style="color: #fff;" >Countdowm Timer:</b></label>
+        <br/>
+        <input type="datetime-local" id="target-date">
+        <br/>
+        <button class="startCounter" onclick="startCountdown()">Start Countdown</button>
+    </div>
+    <div style="color: #fff;" id="countdown"></div>
+
+
+    
+
+
+
+
+</body>
+
+</html>
